@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-Ubuntu profile configuration files.
+Ubuntu profile configuration files for easy access.
