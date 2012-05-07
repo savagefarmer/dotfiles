@@ -1,0 +1,36 @@
+ ### GNU Screen Configuration File   
+
+### General
+# Don't display the copyright page
+startup_message off
+
+# Enable bottom statusbar - shows the opened windows and more.
+caption always '%{= dg} %H %{G}| %{B}%l %{G}|%=%?%{d}%-w%?%{r}(%{d}%n %t%? {%u} %?%{r})%{d}%?%+w%?%=%{G}| %{B}%M %d %c:%s '
+
+# Default windows to open when starting Screen:
+screen -t bash 1
+screen -t bash 2
+
+# Uncomment below to launch irssi in a window.
+# screen -t irssi	0 irssi
+
+#### Keyboard Shortcuts
+# execute 'cat > /dev/null' to see the escape sequences in your terminal
+
+# Change Escape Combination to Ctrl+F (Ctrl+A is too useful)
+escape ^Ff
+
+## Next Window
+# Ctrl + Alt + Right from gnome-terminal
+bindkey ^[[1;7D next
+
+# Ctrl+Alt+Right from putty
+bindkey ^[^[[C next
+
+
+## Previous Window
+# Ctrl + Alt + Left from gnome-terminal
+bindkey ^[[1;7C prev
+
+# Ctrl+Alt+Left from putty
+bindkey ^[^[[D prev 
